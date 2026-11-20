@@ -1,8 +1,8 @@
 {
-  "series": "试错",
+  "series": "强化学习系列",
   "volume": "算法篇",
   "subtitle": "从贝尔曼方程到 PPO 与离线强化学习",
-  "title": "试错 · 算法篇：从贝尔曼方程到 PPO 与离线强化学习",
+  "title": "强化学习系列 · 算法篇：从贝尔曼方程到 PPO 与离线强化学习",
   "pdf": "rl-v3-algorithms.pdf",
   "author": "Dr. Dezeming",
   "year": "2026",
