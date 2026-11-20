@@ -1,0 +1,31 @@
+- [本册首页](books/concepts/README.md)
+
+- **第一部　先看清楚问题**
+  - [第 1 章　从推荐流到红绿灯：看不见的决策者](books/concepts/chapters/ch01.md)
+  - [第 2 章　五个词搭起一个世界](books/concepts/chapters/ch02.md)
+  - [第 3 章　延迟的奖赏：为什么不能只看眼前](books/concepts/chapters/ch03.md)
+- **第二部　学会判断和选择**
+  - [第 4 章　探索与利用：老虎机教给我们的事](books/concepts/chapters/ch04.md)
+  - [第 5 章　给状态打分：价值与 Q 值](books/concepts/chapters/ch05.md)
+  - [第 6 章　从打分到行动：策略与它的两种脾气](books/concepts/chapters/ch06.md)
+- **第三部　机器真的学会了**
+  - [第 7 章　一次游戏的胜利：DQN 与 Atari 的突破](books/concepts/chapters/ch07.md)
+  - [第 8 章　走一步看十步：AlphaGo 与搜索](books/concepts/chapters/ch08.md)
+  - [第 9 章　策略梯度与 PPO：为什么不给动作打分也能学](books/concepts/chapters/ch09.md)
+  - [第 10 章　从屏幕到地面：仿真与现实的差距](books/concepts/chapters/ch10.md)
+  - [第 11 章　游戏之外的战场：推荐、调度、芯片与科学](books/concepts/chapters/ch11.md)
+- **第四部　大模型时代的强化学习**
+  - [第 12 章　大模型为什么用强化学习：三句话说清 RLHF](books/concepts/chapters/ch12.md)
+  - [第 13 章　让模型自己检查答案：可验证奖励与推理模型](books/concepts/chapters/ch13.md)
+  - [第 14 章　会动手的模型：Agentic RL](books/concepts/chapters/ch14.md)
+  - [第 15 章　大模型用强化学习的代价](books/concepts/chapters/ch15.md)
+- **第五部　更大的图景**
+  - [第 16 章　不止一个智能体：博弈与自对弈](books/concepts/chapters/ch16.md)
+  - [第 17 章　看别人怎么做：模仿学习与离线强化学习](books/concepts/chapters/ch17.md)
+  - [第 18 章　在想象里练习：世界模型与具身智能](books/concepts/chapters/ch18.md)
+  - [第 19 章　怎么判断行不行：评测、安全与对齐](books/concepts/chapters/ch19.md)
+- **第六部　怎么继续**
+  - [第 20 章　十个常见误解](books/concepts/chapters/ch20.md)
+  - [第 21 章　读新闻的姿势：常见说法与它们的言外之意](books/concepts/chapters/ch21.md)
+
+- [下载本册 PDF](output/rl-v1-concepts.pdf ':ignore')

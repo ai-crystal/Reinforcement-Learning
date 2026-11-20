@@ -1,0 +1,17 @@
+{
+  "series": "试错",
+  "volume": "大模型篇",
+  "subtitle": "从人类反馈到推理模型",
+  "title": "试错 · 大模型篇：从人类反馈到推理模型",
+  "pdf": "rl-v4-llm.pdf",
+  "author": "Dr. Dezeming",
+  "year": "2026",
+  "volno": "04",
+  "voltotal": 4,
+  "en": "REINFORCEMENT LEARNING · ALIGNING LANGUAGE MODELS",
+  "accent": "8A5A2B",
+  "toc_depth": 1,
+  "subject": "大模型的对齐训练与推理强化学习",
+  "keywords": "强化学习, RLHF, DPO, GRPO, RLVR, 推理模型, Agent",
+  "blurb": "这一册把强化学习用到语言模型上。偏好如何变成奖励，PPO 在千亿参数上遇到什么麻烦，DPO 怎样把强化学习化简成分类，可验证奖励又为什么让推理能力变得可以训练。"
+}

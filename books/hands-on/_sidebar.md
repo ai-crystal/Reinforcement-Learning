@@ -1,0 +1,28 @@
+- [本册首页](books/hands-on/README.md)
+
+- **第一部　准备**
+  - [第 1 章　装好一个能跑实验的环境](books/hands-on/chapters/ch01.md)
+  - [第 2 章　第一次和 CartPole 打交道](books/hands-on/chapters/ch02.md)
+  - [第 3 章　看懂一条轨迹](books/hands-on/chapters/ch03.md)
+- **第二部　从表格开始**
+  - [第 4 章　自己做一个网格世界](books/hands-on/chapters/ch04.md)
+  - [第 5 章　表格 Q 学习：在小世界里学会走路](books/hands-on/chapters/ch05.md)
+  - [第 6 章　把训练过程画出来](books/hands-on/chapters/ch06.md)
+- **第三部　神经网络上场**
+  - [第 7 章　经验回放与目标网络：DQN 在 CartPole 上](books/hands-on/chapters/ch07.md)
+  - [第 8 章　策略梯度：REINFORCE 的另一条路](books/hands-on/chapters/ch08.md)
+  - [第 9 章　PPO：让训练稳下来](books/hands-on/chapters/ch09.md)
+  - [第 10 章　换个环境：从 CartPole 到 LunarLander](books/hands-on/chapters/ch10.md)
+- **第四部　和 AI 一起做实验**
+  - [第 11 章　把实验写成能重复的样子](books/hands-on/chapters/ch11.md)
+  - [第 12 章　奖励不涨时先查什么](books/hands-on/chapters/ch12.md)
+- **第五部　再往前一步**
+  - [第 13 章　并行环境：让采样快起来](books/hands-on/chapters/ch13.md)
+  - [第 14 章　DQN 的三个改进：Double、Dueling、优先回放](books/hands-on/chapters/ch14.md)
+  - [第 15 章　连续动作：把扭矩切成七档](books/hands-on/chapters/ch15.md)
+  - [第 16 章　稀疏奖励与奖励塑形](books/hands-on/chapters/ch16.md)
+  - [第 17 章　超参数与实验管理](books/hands-on/chapters/ch17.md)
+  - [第 18 章　保存、回放与部署](books/hands-on/chapters/ch18.md)
+  - [第 19 章　把结果讲给别人听](books/hands-on/chapters/ch19.md)
+
+- [下载本册 PDF](output/rl-v2-hands-on.pdf ':ignore')

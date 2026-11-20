@@ -1,0 +1,48 @@
+{
+ "env": "CartPole-v1",
+ "n_envs": 8,
+ "steps": 20000,
+ "python": "3.12.14",
+ "gymnasium": "1.4.0",
+ "rows": [
+  {
+   "name": "serial",
+   "steps": 20000,
+   "envs": 1,
+   "seconds": 0.1,
+   "steps_per_sec": 199421.7,
+   "runs": [
+    0.102,
+    0.107,
+    0.1
+   ],
+   "speedup": 1.0
+  },
+  {
+   "name": "sync",
+   "steps": 20000,
+   "envs": 8,
+   "seconds": 0.133,
+   "steps_per_sec": 150320.9,
+   "runs": [
+    0.133,
+    0.135,
+    0.136
+   ],
+   "speedup": 0.75
+  },
+  {
+   "name": "async",
+   "steps": 20000,
+   "envs": 8,
+   "seconds": 0.493,
+   "steps_per_sec": 40542.2,
+   "runs": [
+    0.533,
+    0.493,
+    0.86
+   ],
+   "speedup": 0.2
+  }
+ ]
+}

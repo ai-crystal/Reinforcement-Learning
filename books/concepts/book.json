@@ -1,0 +1,17 @@
+{
+  "series": "试错",
+  "volume": "概念篇",
+  "subtitle": "从老虎机到推理模型的全景图",
+  "title": "试错 · 概念篇：从老虎机到推理模型的全景图",
+  "pdf": "rl-v1-concepts.pdf",
+  "author": "Dr. Dezeming",
+  "year": "2026",
+  "volno": "01",
+  "voltotal": 4,
+  "en": "REINFORCEMENT LEARNING · THE IDEAS",
+  "accent": "1E5C4F",
+  "toc_depth": 0,
+  "subject": "强化学习的概念、直觉与全景",
+  "keywords": "强化学习, 智能体, 奖励, DQN, AlphaGo, PPO, RLHF, 推理模型, 具身智能",
+  "blurb": "这一册不写公式，把强化学习的每个词放回它要解决的问题里，再把今天还在用的方向走一遍：从老虎机、Atari、AlphaGo，到推荐、芯片、机器人、大模型对齐、推理训练、多智能体与具身智能。读完能看懂一条技术新闻在说什么，也知道每个新名词大概在哪一格。"
+}

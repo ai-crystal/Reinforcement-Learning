@@ -1,0 +1,361 @@
+%============================================================
+%  《试错》强化学习系列 排版模板
+%  Markdown 源文件经 pandoc 转换后套用本模板，由 XeLaTeX 编译
+%============================================================
+\documentclass[UTF8,11pt,twoside,openany,fontset=none]{ctexbook}
+
+% ---------- 页面 ----------
+\usepackage{geometry}
+\geometry{paperwidth=170mm,paperheight=240mm,
+  inner=21mm,outer=17mm,top=19mm,bottom=22mm,
+  headheight=22pt,headsep=7mm,footskip=11mm}
+
+% ---------- 字体 ----------
+\usepackage{fontspec}
+\usepackage{xeCJK}
+
+\setmainfont{texgyrepagella}[
+  Extension=.otf,
+  UprightFont=*-regular, BoldFont=*-bold,
+  ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\setsansfont{texgyreheros}[
+  Extension=.otf,
+  UprightFont=*-regular, BoldFont=*-bold,
+  ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\setmonofont{Consolas}[Scale=0.88]
+
+\IfFontExistsTF{C:/Windows/Fonts/NotoSerifSC-VF.ttf}{
+  \setCJKmainfont{NotoSerifSC-VF.ttf}[Path=C:/Windows/Fonts/,AutoFakeBold=2.6]
+}{
+  \setCJKmainfont{SimSun}[AutoFakeBold=2.6]
+}
+\IfFontExistsTF{C:/Windows/Fonts/NotoSansSC-VF.ttf}{
+  \setCJKsansfont{NotoSansSC-VF.ttf}[Path=C:/Windows/Fonts/,AutoFakeBold=2.6]
+}{
+  \setCJKsansfont{SimHei}[AutoFakeBold=2.6]
+}
+\IfFontExistsTF{C:/Windows/Fonts/NotoSerifSC-VF.ttf}{
+  \setCJKfamilyfont{zhserif}{NotoSerifSC-VF.ttf}[Path=C:/Windows/Fonts/,AutoFakeBold=2.6]
+}{
+  \setCJKfamilyfont{zhserif}{SimSun}[AutoFakeBold=2.6]
+}
+\newcommand{\zhserif}{\CJKfamily{zhserif}}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{texgyrepagella-math.otf}
+
+% ---------- 行距与段落 ----------
+\usepackage{setspace}
+\setstretch{1.36}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.42\baselineskip}
+\raggedbottom
+\clubpenalty=10000
+\widowpenalty=10000
+
+% ---------- 颜色 ----------
+\usepackage{xcolor}
+\definecolor{ink}{HTML}{191A1C}
+\definecolor{accent}{HTML}{@@ACCENT@@}
+\definecolor{gold}{HTML}{B08344}
+\definecolor{graytext}{HTML}{6E7178}
+\definecolor{rulegray}{HTML}{D5D8DE}
+\definecolor{shadecolor}{HTML}{F4F6F5}
+\definecolor{coverbg}{HTML}{07100E}
+
+% ---------- 图形 ----------
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{%
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\linewidth}{\wd\pandoc@box}%
+  \ifdim\Gin@nat@height>\textheight
+    \Gscale@div\@tempb\textheight\Gin@nat@height
+    \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi
+  \fi
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi}
+\makeatother
+\graphicspath{{@@IMAGES@@/}{../}{./}}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,shapes.geometric,arrows.meta,backgrounds,fit,patterns}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% ---------- 表格 ----------
+\usepackage{longtable,booktabs,array,multirow,makecell,calc}
+\usepackage{float}
+\makeatletter
+\def\fps@figure{H}
+\makeatother
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\small\renewcommand{\arraystretch}{1.16}}
+\renewcommand{\arraystretch}{1.28}
+\newcounter{none}
+\usepackage{caption}
+\captionsetup{font={small,sf},labelfont={small,bf,color=accent},labelsep=quad,skip=8pt}
+\captionsetup[table]{position=top}
+
+% ---------- 代码 ----------
+\usepackage{fancyvrb}
+\usepackage{framed}
+$highlighting-macros$
+\makeatletter
+\@ifundefined{Shaded}{%
+  \newenvironment{Shaded}{\vspace{4pt}\begin{snugshade}\small}{\end{snugshade}\vspace{4pt}}%
+}{%
+  \renewenvironment{Shaded}{\vspace{4pt}\begin{snugshade}\small}{\end{snugshade}\vspace{4pt}}%
+}
+\def\verbatim@font{\normalfont\ttfamily\fontsize{8.4}{10.8}\selectfont}
+\makeatother
+
+% ---------- 标题样式 ----------
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{zhnumber}
+
+\newcommand{\partpage}[2]{%
+  \ifdim\pagetotal>0pt\clearpage\fi
+  \thispagestyle{empty}%
+  \phantomsection
+  \addcontentsline{toc}{part}{第#1部\quad #2}%
+  \markboth{第#1部\quad #2}{}%
+  \vspace*{46mm}%
+  \noindent{\sffamily\bfseries\fontsize{11}{14}\selectfont\color{accent} 第#1部}\par
+  \vspace{13pt}
+  \noindent{\sffamily\bfseries\fontsize{29}{37}\selectfont\color{ink}\zhserif #2}\par
+  \vspace{13pt}
+  \noindent{\color{gold}\rule{42mm}{0.9pt}}\par
+  \vspace{28pt}%
+}
+
+\titleformat{\part}[display]
+  {\normalfont\sffamily\raggedright}
+  {\color{accent}\fontsize{12}{15}\selectfont\bfseries 第\,\zhnum{part}\,部}
+  {16pt}
+  {\color{ink}\fontsize{31}{38}\selectfont\bfseries\zhserif}
+  [\vspace{18pt}{\color{gold}\rule{42mm}{0.9pt}}]
+\titlespacing*{\part}{0pt}{48pt}{34pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\raggedright}
+  {\color{accent}\fontsize{10.5}{13}\selectfont\bfseries 第\,\zhnum{chapter}\,章}
+  {12pt}
+  {\color{ink}\fontsize{23}{29}\selectfont\bfseries\zhserif}
+  [\vspace{10pt}{\color{rulegray}\rule{\textwidth}{0.5pt}}]
+\titlespacing*{\chapter}{0pt}{6pt}{24pt}
+
+\titleformat{\section}
+  {\normalfont\sffamily\bfseries\fontsize{14.5}{19}\selectfont\color{ink}}
+  {\color{accent}\thesection}{0.55em}{}
+\titlespacing*{\section}{0pt}{19pt}{7pt}
+
+\titleformat{\subsection}
+  {\normalfont\sffamily\bfseries\fontsize{12}{15.5}\selectfont\color{ink}}
+  {\color{accent}\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{14pt}{5pt}
+
+\titleformat{\subsubsection}
+  {\normalfont\sffamily\bfseries\fontsize{10.8}{14}\selectfont\color{ink}}
+  {\color{accent}\thesubsubsection}{0.5em}{}
+\titlespacing*{\subsubsection}{0pt}{11pt}{3pt}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{@@TOCDEPTH@@}
+
+\renewcommand{\thefigure}{\thechapter-\arabic{figure}}
+\renewcommand{\thetable}{\thechapter-\arabic{table}}
+\renewcommand{\theequation}{\thechapter-\arabic{equation}}
+
+% ---------- 页眉页脚 ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{rulegray}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[LE]{\small\sffamily\color{graytext}\thepage\quad @@SERIES@@}
+\fancyhead[RO]{\small\sffamily\color{graytext}\leftmark\quad\thepage}
+\fancypagestyle{plain}{\fancyhf{}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \fancyhead[LE,RO]{\small\sffamily\color{graytext}\thepage}%
+  \renewcommand{\headrule}{\hbox to\headwidth{\color{rulegray}\leaders\hrule height \headrulewidth\hfill}}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{}
+
+% ---------- 目录 ----------
+\usepackage{tocloft}
+\renewcommand{\cftpartfont}{\sffamily\bfseries\fontsize{11.5}{16}\selectfont\color{accent}}
+\renewcommand{\cftpartpagefont}{\sffamily\bfseries\color{accent}}
+\renewcommand{\cftchapfont}{\sffamily\fontsize{10}{14.5}\selectfont}
+\renewcommand{\cftchappagefont}{\sffamily\fontsize{10}{14.5}\selectfont}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftbeforepartskip}{18pt}
+\setlength{\cftbeforechapskip}{6pt}
+\renewcommand{\contentsname}{目\quad 录}
+
+% ---------- 引用与环境 ----------
+\renewenvironment{quote}
+  {\begin{tcolorbox}[enhanced, breakable, frame hidden, colback=white,
+    borderline west={1.6pt}{0pt}{gold!55!black}, left=12pt, right=6pt,
+    top=4pt, bottom=4pt, before skip=10pt, after skip=10pt,
+    fontupper=\small\color{graytext}\linespread{1.45}\selectfont]}
+  {\end{tcolorbox}}
+
+\newenvironment{partintro}
+  {\par\vspace{10pt}\begin{minipage}{0.88\textwidth}\small\color{graytext}%
+   \linespread{1.55}\selectfont\zhserif}
+  {\end{minipage}\par}
+
+\newtcolorbox{keybox}{
+  enhanced, breakable, colback=shadecolor, colframe=shadecolor,
+  boxrule=0pt, leftrule=2.4pt, arc=0pt, outer arc=0pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  before skip=10pt, after skip=10pt,
+  colframe=accent!70!black,
+  fontupper=\small}
+
+\newenvironment{keypoint}{\begin{keybox}}{\end{keybox}}
+
+% 图内段落不要缩进，否则整张图会偏右两个字
+\AtBeginEnvironment{figure}{\setlength{\parindent}{0pt}}
+
+% 表题：编号按章编排，样式与图题一致
+\newcommand{\tablecap}[2]{%
+  \needspace{5\baselineskip}%
+  \par\vspace{9pt}\noindent
+  {\sffamily\small\bfseries\color{accent}\ifstrempty{#1}{}{表~#1\quad}}%
+  {\sffamily\small\color{ink}#2}\par\vspace{3pt}}
+
+% ---------- 列表 ----------
+\usepackage{enumitem}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlist[itemize]{leftmargin=2.2em,itemsep=3pt,topsep=5pt,parsep=0pt,before={\raggedright}}
+\setlist[enumerate]{leftmargin=2.4em,itemsep=3pt,topsep=5pt,parsep=0pt}
+\renewcommand{\labelitemi}{\color{accent}\raisebox{0.15ex}{\scriptsize\textbullet}}
+
+% ---------- 其他 ----------
+\usepackage{needspace}
+\setlength{\emergencystretch}{3em}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage[hidelinks,bookmarksnumbered,bookmarksopen=true]{hyperref}
+\hypersetup{
+  pdftitle={@@TITLE@@},
+  pdfauthor={Dr. Dezeming},
+  pdfsubject={@@SUBJECT@@},
+  pdfkeywords={@@KEYWORDS@@},
+  linkcolor=accent, urlcolor=accent, citecolor=accent,
+  bookmarksdepth=2
+}
+\usepackage{url}
+
+%============= 封面 / 封底 =============
+\newcommand{\coverpage}{%
+\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[coverbg] (current page.south west) rectangle (current page.north east);
+  \node[anchor=north,inner sep=0pt] at (current page.north)
+    {\includegraphics[width=\paperwidth]{@@COVERART@@}};
+  \draw[white,opacity=0.32,line width=0.4pt]
+    ([xshift=21mm,yshift=-20mm]current page.north west) --
+    ([xshift=-17mm,yshift=-20mm]current page.north east);
+  \node[anchor=north west,text=white,opacity=0.72,font=\sffamily\fontsize{7.6}{9}\selectfont]
+    at ([xshift=21mm,yshift=-24mm]current page.north west) {@@ENNAME@@};
+  \node[anchor=north east,text=white,opacity=0.72,font=\sffamily\fontsize{7.6}{9}\selectfont]
+    at ([xshift=-17mm,yshift=-24mm]current page.north east) {@@VOLNO@@\,/\,@@VOLTOTAL@@};
+  \node[anchor=west,text=white,opacity=0.70,font=\sffamily\fontsize{9}{12}\selectfont]
+    at ([xshift=21mm,yshift=113mm]current page.south west) {@@SERIES@@ \;·\; 系列};
+  \node[anchor=west,text=white,font=\sffamily\bfseries\fontsize{37}{45}\selectfont]
+    at ([xshift=21mm,yshift=96mm]current page.south west) {@@VOLUME@@};
+  \draw[gold,line width=0.9pt]
+    ([xshift=21mm,yshift=86mm]current page.south west) -- ++(38mm,0);
+  \node[anchor=north west,text=white,opacity=0.92,font=\sffamily\fontsize{12}{17}\selectfont,
+        text width=126mm,align=left]
+    at ([xshift=21mm,yshift=79mm]current page.south west) {@@SUBTITLE@@};
+  \node[anchor=south west,text=white,opacity=0.60,font=\sffamily\fontsize{9}{12}\selectfont]
+    at ([xshift=21mm,yshift=21mm]current page.south west) {Dr. Dezeming};
+  \node[anchor=south east,text=white,opacity=0.45,font=\sffamily\fontsize{8}{11}\selectfont]
+    at ([xshift=-17mm,yshift=21mm]current page.south east) {@@YEAR@@};
+\end{tikzpicture}%
+\clearpage}
+
+\newcommand{\backcover}{%
+\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[coverbg] (current page.south west) rectangle (current page.north east);
+  \node[anchor=north,inner sep=0pt] at (current page.north)
+    {\includegraphics[width=\paperwidth]{@@BACKART@@}};
+  \node[anchor=west,text=white,font=\sffamily\bfseries\fontsize{13}{17}\selectfont]
+    at ([xshift=21mm,yshift=-112mm]current page.north west) {关于本册};
+  \draw[gold,line width=0.6pt]
+    ([xshift=21mm,yshift=-116mm]current page.north west) -- ++(22mm,0);
+  \node[anchor=north west,text=white,opacity=0.86,text width=128mm,
+        font=\zhserif\fontsize{8.6}{14.5}\selectfont,align=justify]
+    at ([xshift=21mm,yshift=-124mm]current page.north west) {%
+      @@BLURB@@};
+  \draw[white,opacity=0.25,line width=0.4pt]
+    ([xshift=21mm,yshift=34mm]current page.south west) --
+    ([xshift=-17mm,yshift=34mm]current page.south east);
+  \node[anchor=south west,text=white,opacity=0.55,font=\sffamily\fontsize{8}{11}\selectfont]
+    at ([xshift=21mm,yshift=22mm]current page.south west) {@@SERIES@@ \quad·\quad @@YEAR@@};
+  \node[anchor=south east,text=white,opacity=0.40,font=\sffamily\fontsize{7.5}{10}\selectfont]
+    at ([xshift=-17mm,yshift=22mm]current page.south east) {@@VOLNO@@\,/\,@@VOLTOTAL@@};
+\end{tikzpicture}%
+\clearpage}
+
+\newcommand{\titlepagefront}{%
+\thispagestyle{empty}%
+\begin{center}
+\vspace*{34mm}
+{\sffamily\fontsize{9}{12}\selectfont\color{graytext}@@ENNAME@@}\\[16mm]
+{\sffamily\fontsize{9}{12}\selectfont\color{graytext}@@SERIES@@ \;·\; 第 @@VOLNO@@ 册}\\[3mm]
+{\sffamily\bfseries\fontsize{30}{38}\selectfont @@VOLUME@@}\\[7mm]
+{\sffamily\fontsize{12}{18}\selectfont\color{graytext} @@SUBTITLE@@}\\[24mm]
+{\color{gold}\rule{28mm}{0.8pt}}\\[24mm]
+{\sffamily\fontsize{11}{15}\selectfont Dr. Dezeming}\\[3mm]
+{\sffamily\fontsize{9}{13}\selectfont\color{graytext} @@YEAR@@}
+\end{center}
+\clearpage}
+
+
+\newcommand{\copyrightpage}{%
+\thispagestyle{empty}%
+\vspace*{\fill}
+\begin{center}
+{\sffamily\bfseries\fontsize{15}{20}\selectfont @@VOLUME@@}\\[6mm]
+{\sffamily\fontsize{10}{14}\selectfont @@SUBTITLE@@}\\[16mm]
+{\sffamily\fontsize{10}{15}\selectfont Dr. Dezeming}\\[4mm]
+{\sffamily\fontsize{9}{13}\selectfont\color{graytext} @@YEAR@@}\\[18mm]
+{\fontsize{8.6}{13}\selectfont\color{graytext}
+\begin{minipage}{0.78\textwidth}
+本书文字与插图采用 Creative Commons Attribution-NonCommercial 4.0
+国际许可协议（CC BY-NC 4.0）授权。转载请注明作者与出处，不得用于商业用途。\\
+书中引用的论文版权归原作者所有，仅作学术讨论与索引之用。
+\end{minipage}}
+\end{center}
+\vspace*{\fill}
+\clearpage}
+
+%============= 文档 =============
+\begin{document}
+\frontmatter
+\coverpage
+\titlepagefront
+\copyrightpage
+\input{front.tex}
+\clearpage
+\tableofcontents
+\clearpage
+\makeatletter\@mainmattertrue\makeatother
+\pagenumbering{arabic}
+$body$
+\backmatter
+\input{afterword.tex}
+\backcover
+\end{document}

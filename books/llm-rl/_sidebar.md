@@ -1,0 +1,28 @@
+- [本册首页](books/llm-rl/README.md)
+
+- **第一部　把生成看成决策**
+  - [第 1 章　一个 token 就是一步动作](books/llm-rl/chapters/ch01.md)
+  - [第 2 章　奖励模型：把偏好变成一个分数](books/llm-rl/chapters/ch02.md)
+- **第二部　从反馈到偏好**
+  - [第 3 章　PPO 训练大模型的工程现场](books/llm-rl/chapters/ch03.md)
+  - [第 4 章　DPO：把强化学习化简成分类](books/llm-rl/chapters/ch04.md)
+  - [第 5 章　偏好优化的变体：IPO、KTO、ORPO、SimPO](books/llm-rl/chapters/ch05.md)
+- **第三部　可验证奖励与推理**
+  - [第 6 章　RLVR：答案能检查时发生了什么](books/llm-rl/chapters/ch06.md)
+  - [第 7 章　GRPO：去掉价值网络](books/llm-rl/chapters/ch07.md)
+  - [第 8 章　R1 式训练：冷启动、拒绝采样与蒸馏](books/llm-rl/chapters/ch08.md)
+  - [第 9 章　测试时计算：采样、投票与搜索](books/llm-rl/chapters/ch09.md)
+- **第四部　边界与判断**
+  - [第 10 章　奖励黑客与对齐失败](books/llm-rl/chapters/ch10.md)
+  - [第 11 章　Agentic RL：多轮、工具与环境](books/llm-rl/chapters/ch11.md)
+  - [第 12 章　对齐的代价：谄媚、退化与多样性](books/llm-rl/chapters/ch12.md)
+- **第五部　把方法落到工程**
+  - [第 13 章　预训练、SFT 与 RL 的分工](books/llm-rl/chapters/ch13.md)
+  - [第 14 章　奖励模型训练实战](books/llm-rl/chapters/ch14.md)
+  - [第 15 章　PPO 实现：用 TRL 跑一遍](books/llm-rl/chapters/ch15.md)
+  - [第 16 章　DPO 的数学细节](books/llm-rl/chapters/ch16.md)
+  - [第 17 章　可验证奖励的数据工程](books/llm-rl/chapters/ch17.md)
+  - [第 18 章　蒸馏与小模型复现](books/llm-rl/chapters/ch18.md)
+  - [第 19 章　评测、复现与收尾](books/llm-rl/chapters/ch19.md)
+
+- [下载本册 PDF](output/rl-v4-llm.pdf ':ignore')

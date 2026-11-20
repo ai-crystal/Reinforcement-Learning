@@ -1,0 +1,17 @@
+{
+  "series": "试错",
+  "volume": "动手篇",
+  "subtitle": "在游戏里训练一个会决策的程序",
+  "title": "试错 · 动手篇：在游戏里训练一个会决策的程序",
+  "pdf": "rl-v2-hands-on.pdf",
+  "author": "Dr. Dezeming",
+  "year": "2026",
+  "volno": "02",
+  "voltotal": 4,
+  "en": "REINFORCEMENT LEARNING · GETTING YOUR HANDS DIRTY",
+  "accent": "1F4E7A",
+  "toc_depth": 1,
+  "subject": "用 Gymnasium 与 PyTorch 从零训练智能体",
+  "keywords": "强化学习, Gymnasium, CartPole, DQN, PPO, 实验方法",
+  "blurb": "这一册把概念变成能跑的程序。从 CartPole 开始，自己写环境，用表格学会走路，再换成神经网络，一路做到 PPO。所有曲线都是真跑出来的，失败的实验也留在书里。"
+}
