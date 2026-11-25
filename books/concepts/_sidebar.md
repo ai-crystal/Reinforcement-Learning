@@ -26,4 +26,4 @@
 - **附录**
   - [glossary](/books/concepts/appendix/glossary.md)
 
-- <a href="/output/rl-v1-concepts-new.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/rl-v1-concepts.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

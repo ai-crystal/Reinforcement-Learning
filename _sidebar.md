@@ -2,7 +2,7 @@
 
 - **01　概念篇**
   - [本册首页](/books/concepts/README.md)
-  - <a href="/output/rl-v1-concepts-new.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+  - <a href="/output/rl-v1-concepts.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **02　动手篇**
   - [本册首页](/books/hands-on/README.md)

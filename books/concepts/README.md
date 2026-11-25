@@ -8,7 +8,7 @@
 
 共 21 章 · 254 页
 
-[从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/rl-v1-concepts-new.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
+[从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/rl-v1-concepts.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
 
 ## 这一册讲什么
 
