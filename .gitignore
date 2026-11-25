@@ -22,3 +22,5 @@ __pycache__/
 
 # 根目录临时 PDF
 /*.pdf
+# 目标文件被占用时的临时输出
+output/*-new.pdf

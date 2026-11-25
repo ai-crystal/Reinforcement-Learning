@@ -207,7 +207,13 @@ def main() -> None:
 
     output = ROOT / "output" / meta.get("pdf", book.name + ".pdf")
     output.parent.mkdir(exist_ok=True)
-    shutil.copyfile(pdf, output)
+    try:
+        shutil.copyfile(pdf, output)
+    except PermissionError:
+        alt = output.with_name(output.stem + "-new" + output.suffix)
+        shutil.copyfile(pdf, alt)
+        print("提示：%s 正被其他程序占用，本次输出到 %s" % (output.name, alt.name))
+        output = alt
     pages = pdf_pages(pdf)
     print("[4/4] 完成：%s（%s 页，%.1f MB）" % (output, pages, size_mb))
 
