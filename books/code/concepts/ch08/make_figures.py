@@ -6,7 +6,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from figstyle import (DEEP, DEEP_BG, DEEP_L, GOLD, GOLD_L, GRAY, INK, WHITE,
-                      arrow, box, diagram, label, save)
+                      arrow, box, diagram, label, line, save)
 
 # ---------------------------------------------------------------- 图 8-1
 fig, ax = diagram(6.4, 2.9, xlim=(0, 100), ylim=(0, 48))
@@ -93,3 +93,44 @@ arrow(ax, (46.0, 35.0), (51.6, 35.0), color=GRAY)
 label(ax, 47.6, 23.0, "访问分布和胜负同时当目标", fs=6.8, color=DEEP, ha="left")
 
 save(fig, "concepts", "08", "fig08-3.png")
+
+# ---------------------------------------------------------------- 图 8-4
+fig, ax = diagram(6.6, 3.0, xlim=(0, 100), ylim=(0, 48))
+
+box(ax, 2, 30, 16, 9, "", fc=WHITE, ec=GRAY)
+label(ax, 10, 36.4, "棋盘局面", fs=7.4)
+label(ax, 10, 32.4, "输入", fs=6.8, color=GRAY)
+
+box(ax, 24, 25, 22, 19, "", fc=DEEP_BG, ec=DEEP_L)
+label(ax, 35, 39.0, "共享主干", fs=7.8, weight="bold")
+label(ax, 35, 35.0, "卷积层", fs=6.8, color=GRAY)
+label(ax, 35, 31.4, "只有一份参数", fs=6.8, color=GRAY)
+
+box(ax, 54, 35, 22, 9, "", fc=GOLD_L, ec=GOLD)
+label(ax, 65, 41.4, "策略头", fs=7.4, weight="bold")
+label(ax, 65, 37.4, "落子概率", fs=6.8, color=GRAY)
+
+box(ax, 54, 24, 22, 9, "", fc=GOLD_L, ec=GOLD)
+label(ax, 65, 30.4, "价值头", fs=7.4, weight="bold")
+label(ax, 65, 26.4, "胜率", fs=6.8, color=GRAY)
+
+box(ax, 82, 35, 16, 9, "", fc=WHITE, ec=GRAY)
+label(ax, 90, 41.4, "策略损失", fs=7.0)
+label(ax, 90, 37.4, "对比搜索分布", fs=6.4, color=GRAY)
+
+box(ax, 82, 24, 16, 9, "", fc=WHITE, ec=GRAY)
+label(ax, 90, 30.4, "价值损失", fs=7.0)
+label(ax, 90, 26.4, "对比真实胜负", fs=6.4, color=GRAY)
+
+arrow(ax, (18.4, 34.5), (23.6, 34.5), color=GRAY)
+arrow(ax, (46.4, 39.5), (53.6, 39.5), color=GRAY)
+arrow(ax, (46.4, 28.5), (53.6, 28.5), color=GRAY)
+arrow(ax, (76.4, 39.5), (81.6, 39.5), color=GRAY)
+arrow(ax, (76.4, 28.5), (81.6, 28.5), color=GRAY)
+
+line(ax, (90.0, 23.6), (90.0, 8.0), color=DEEP, lw=0.9, ls=(0, (3, 2)))
+line(ax, (90.0, 8.0), (35.0, 8.0), color=DEEP, lw=0.9, ls=(0, (3, 2)))
+arrow(ax, (35.0, 8.0), (35.0, 24.6), color=DEEP, ls=(0, (3, 2)), mutation=8)
+label(ax, 63.0, 5.6, "两个损失各自反传，梯度在主干里相加", fs=6.8, color=DEEP)
+
+save(fig, "concepts", "08", "fig08-4.png")
