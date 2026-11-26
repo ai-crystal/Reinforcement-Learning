@@ -24,3 +24,5 @@ __pycache__/
 /*.pdf
 # 目标文件被占用时的临时输出
 output/*-new.pdf
+# 旧命名遗留
+/output/rl-*.pdf

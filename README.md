@@ -14,10 +14,10 @@
 
 | 册 | 书名 | 一句话 | 页数 | 在线阅读 | PDF |
 | --- | --- | --- | ---: | --- | --- |
-| 01 | [概念篇](books/concepts/README.md) | 从老虎机到推理模型的全景图 | 257 | [阅读](books/concepts/README.md) | <a href="output/rl-v1-concepts.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 02 | [动手篇](books/hands-on/README.md) | 在游戏里训练一个会决策的程序 | 106 | [阅读](books/hands-on/README.md) | <a href="output/rl-v2-hands-on.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 03 | [算法篇](books/algorithms/README.md) | 从贝尔曼方程到 PPO 与离线强化学习 | 108 | [阅读](books/algorithms/README.md) | <a href="output/rl-v3-algorithms.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 04 | [大模型篇](books/llm-rl/README.md) | 从人类反馈到推理模型 | 113 | [阅读](books/llm-rl/README.md) | <a href="output/rl-v4-llm.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 01 | [概念篇](books/concepts/README.md) | 从老虎机到推理模型的全景图 | 257 | [阅读](books/concepts/README.md) | <a href="output/v1-concepts.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 02 | [动手篇](books/hands-on/README.md) | 在游戏里训练一个会决策的程序 | 106 | [阅读](books/hands-on/README.md) | <a href="output/v2-hands-on.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 03 | [算法篇](books/algorithms/README.md) | 从贝尔曼方程到 PPO 与离线强化学习 | 108 | [阅读](books/algorithms/README.md) | <a href="output/v3-algorithms.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 04 | [大模型篇](books/llm-rl/README.md) | 从人类反馈到推理模型 | 113 | [阅读](books/llm-rl/README.md) | <a href="output/v4-llm.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
 
 ## 怎么读
 
