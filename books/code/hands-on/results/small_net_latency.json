@@ -1,0 +1,13 @@
+{
+ "update_ms_cpu_b1": 1.139,
+ "update_ms_cpu_b8": 1.161,
+ "update_ms_cpu_b64": 1.272,
+ "update_ms_cpu_b256": 1.866,
+ "forward_us_cpu": 66.5,
+ "update_ms_gpu_b1": 1.757,
+ "update_ms_gpu_b8": 2.157,
+ "update_ms_gpu_b64": 2.125,
+ "update_ms_gpu_b256": 2.126,
+ "forward_us_gpu": 234.1,
+ "roundtrip_ms_gpu_b64": 0.59
+}

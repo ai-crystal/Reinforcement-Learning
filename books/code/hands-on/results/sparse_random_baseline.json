@@ -1,0 +1,1 @@
+{"episodes": 5000, "success": 902, "success_rate": 0.1804, "mean_steps_on_success": 130.89, "shortest_path": 14, "walls": [[1, 5], [2, 5], [3, 5], [4, 5], [5, 3], [5, 4], [5, 6], [5, 7], [5, 8], [6, 5], [7, 5]]}

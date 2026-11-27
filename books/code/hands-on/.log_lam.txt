@@ -1,0 +1,6 @@
+ppo_lam0.0_s0 eval=408.9
+ppo_lam0.0_s1 eval=159.4
+ppo_lam0.95_s0 eval=496.3
+ppo_lam0.95_s1 eval=499.9
+ppo_lam1.0_s0 eval=492.8
+ppo_lam1.0_s1 eval=492.1

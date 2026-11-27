@@ -1,0 +1,72 @@
+{
+  "pool_episodes": 160,
+  "mean_return": 8.997601509094238,
+  "std_return": 3.0316789150238037,
+  "repeats": 60,
+  "cells": [
+    {
+      "variant": "no_baseline",
+      "batch": 1,
+      "signal_norm": 14.845027923583984,
+      "mean_deviation": 66.73773129781087,
+      "noise_to_signal": 4.4956285458905425,
+      "mean_batch_norm": 68.37548580169678
+    },
+    {
+      "variant": "no_baseline",
+      "batch": 8,
+      "signal_norm": 14.845027923583984,
+      "mean_deviation": 25.91313898563385,
+      "noise_to_signal": 1.7455769783002189,
+      "mean_batch_norm": 30.67701727549235
+    },
+    {
+      "variant": "no_baseline",
+      "batch": 32,
+      "signal_norm": 14.845027923583984,
+      "mean_deviation": 11.814214905103048,
+      "noise_to_signal": 0.7958364892216374,
+      "mean_batch_norm": 18.37246975104014
+    },
+    {
+      "variant": "no_baseline",
+      "batch": 128,
+      "signal_norm": 14.845027923583984,
+      "mean_deviation": 2.635993794600169,
+      "noise_to_signal": 0.17756745276391453,
+      "mean_batch_norm": 15.15457436243693
+    },
+    {
+      "variant": "batch_mean",
+      "batch": 1,
+      "signal_norm": 17.968854904174805,
+      "mean_deviation": 43.34596268335978,
+      "noise_to_signal": 2.412282970423817,
+      "mean_batch_norm": 44.6855184952418
+    },
+    {
+      "variant": "batch_mean",
+      "batch": 8,
+      "signal_norm": 17.968854904174805,
+      "mean_deviation": 17.890061084429423,
+      "noise_to_signal": 0.9956149782405962,
+      "mean_batch_norm": 25.590499687194825
+    },
+    {
+      "variant": "batch_mean",
+      "batch": 32,
+      "signal_norm": 17.968854904174805,
+      "mean_deviation": 7.504056934515635,
+      "noise_to_signal": 0.4176146434780192,
+      "mean_batch_norm": 19.204991372426353
+    },
+    {
+      "variant": "batch_mean",
+      "batch": 128,
+      "signal_norm": 17.968854904174805,
+      "mean_deviation": 1.8866119399666785,
+      "noise_to_signal": 0.10499344282246091,
+      "mean_batch_norm": 17.9829904238383
+    }
+  ]
+}

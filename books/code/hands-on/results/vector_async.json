@@ -1,0 +1,32 @@
+{
+ "serial_1": {
+  "seconds": 0.116,
+  "steps_per_sec": 172240.7,
+  "runs": [
+   0.117,
+   0.116,
+   0.12
+  ],
+  "speedup_vs_serial": 1.0
+ },
+ "sync_8": {
+  "seconds": 0.139,
+  "steps_per_sec": 143556.1,
+  "runs": [
+   0.139,
+   0.149,
+   0.187
+  ],
+  "speedup_vs_serial": 0.83
+ },
+ "async_8": {
+  "seconds": 0.566,
+  "steps_per_sec": 35305.1,
+  "runs": [
+   0.566,
+   0.612,
+   0.671
+  ],
+  "speedup_vs_serial": 0.2
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "geometry": {
+  "h": 5,
+  "w": 8,
+  "cells": 40,
+  "walls": 12,
+  "free": 28,
+  "reachable": 28,
+  "start": [
+   0,
+   0
+  ],
+  "goal": [
+   4,
+   7
+  ],
+  "shortest": 11,
+  "dead_ends": [
+   [
+    4,
+    7
+   ]
+  ],
+  "path_actions": [
+   3,
+   3,
+   1,
+   1,
+   3,
+   3,
+   1,
+   1,
+   3,
+   3,
+   3
+  ],
+  "max_distance": 13
+ },
+ "random_walk_slip0": {
+  "success": 0.255,
+  "bumps_per_episode": 87.0,
+  "steps_mean": 181.5
+ },
+ "random_walk_slip01": {
+  "success": 0.23,
+  "bumps_per_episode": 90.36,
+  "steps_mean": 187.2
+ },
+ "wall_variants": [
+  {
+   "wall": "stay",
+   "slip": 0.0,
+   "reach90": 1,
+   "success": 1.0,
+   "steps_when_success": 11.0,
+   "bumps_per_episode_train": 4.16,
+   "bumps_per_episode_eval": 0.0,
+   "eval_steps_mean": 11.0
+  },
+  {
+   "wall": "penalty",
+   "slip": 0.0,
+   "reach90": 0,
+   "success": 1.0,
+   "steps_when_success": 11.0,
+   "bumps_per_episode_train": 1.708,
+   "bumps_per_episode_eval": 0.0,
+   "eval_steps_mean": 11.0
+  },
+  {
+   "wall": "fail",
+   "slip": 0.0,
+   "reach90": 329,
+   "success": 1.0,
+   "steps_when_success": 11.0,
+   "bumps_per_episode_train": 0.733,
+   "bumps_per_episode_eval": 0.0,
+   "eval_steps_mean": 11.0
+  }
+ ],
+ "slip_variants": [
+  {
+   "wall": "stay",
+   "slip": 0.0,
+   "reach90": 1,
+   "success": 1.0,
+   "steps_when_success": 11.0,
+   "bumps_per_episode_train": 4.16,
+   "bumps_per_episode_eval": 0.0,
+   "eval_steps_mean": 11.0
+  },
+  {
+   "wall": "stay",
+   "slip": 0.1,
+   "reach90": 4,
+   "success": 1.0,
+   "steps_when_success": 12.2,
+   "bumps_per_episode_train": 4.845,
+   "bumps_per_episode_eval": 0.0,
+   "eval_steps_mean": 12.2
+  }
+ ],
+ "registration": {
+  "check_env": "passed",
+  "first_step": {
+   "obs": 0,
+   "action": 2,
+   "next": 0,
+   "reward": -0.01,
+   "terminated": false,
+   "truncated": false,
+   "info": "{}"
+  },
+  "reset_same_seed": [
+   0,
+   0
+  ],
+  "obs_in_space": true,
+  "action_sample_type": "int64"
+ }
+}

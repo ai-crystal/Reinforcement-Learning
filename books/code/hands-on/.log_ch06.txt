@@ -1,0 +1,27 @@
+seed 0  ep  25  train 18.0  eval 92.1
+seed 0  ep  50  train 29.0  eval 11.3
+seed 0  ep  75  train 133.0  eval 450.8
+seed 0  ep 100  train 238.0  eval 246.9
+seed 0  ep 125  train 161.0  eval 246.1
+seed 0  ep 150  train 147.0  eval 135.8
+seed 0  ep 175  train 500.0  eval 500.0
+seed 0  ep 200  train 325.0  eval 500.0
+ch06 seed=0  done (223s) -> ch06_metrics_s0.json
+seed 1  ep  25  train 13.0  eval 9.4
+seed 1  ep  50  train 25.0  eval 10.6
+seed 1  ep  75  train 20.0  eval 23.7
+seed 1  ep 100  train 74.0  eval 280.7
+seed 1  ep 125  train 163.0  eval 152.9
+seed 1  ep 150  train 134.0  eval 115.2
+seed 1  ep 175  train 170.0  eval 164.2
+seed 1  ep 200  train 137.0  eval 139.9
+ch06 seed=1  done (93s) -> ch06_metrics_s1.json
+seed 2  ep  25  train 22.0  eval 9.4
+seed 2  ep  50  train 10.0  eval 71.2
+seed 2  ep  75  train 24.0  eval 124.4
+seed 2  ep 100  train 199.0  eval 235.1
+seed 2  ep 125  train 240.0  eval 130.8
+seed 2  ep 150  train 136.0  eval 128.6
+seed 2  ep 175  train 208.0  eval 263.5
+seed 2  ep 200  train 146.0  eval 149.1
+ch06 seed=2  done (113s) -> ch06_metrics_s2.json

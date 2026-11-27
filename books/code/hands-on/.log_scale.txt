@@ -1,0 +1,6 @@
+dqn_scale0.01_s0 eval_steps=500.0
+dqn_scale0.01_s1 eval_steps=242.3
+dqn_scale1.0_s0 eval_steps=200.9
+dqn_scale1.0_s1 eval_steps=126.3
+dqn_scale100.0_s0 eval_steps=9.2
+dqn_scale100.0_s1 eval_steps=9.2

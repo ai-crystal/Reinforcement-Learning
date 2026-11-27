@@ -1,0 +1,57 @@
+{
+ "base": {
+  "rows": 5,
+  "cols": 8,
+  "shortest": 11,
+  "reachable": 28,
+  "random_success": 0.255,
+  "reach90": 1,
+  "success": 1.0,
+  "steps": 11.0,
+  "states": 40
+ },
+ "wide": {
+  "rows": 5,
+  "cols": 16,
+  "shortest": 23,
+  "reachable": 56,
+  "random_success": 0.005,
+  "reach90": 37,
+  "success": 1.0,
+  "steps": 23.0,
+  "states": 80
+ },
+ "walled": {
+  "rows": 5,
+  "cols": 8,
+  "shortest": null,
+  "reachable": 13,
+  "random_success": 0.0,
+  "reach90": null,
+  "success": 0.0,
+  "steps": null,
+  "states": 40
+ },
+ "traps": {
+  "rows": 5,
+  "cols": 8,
+  "shortest": 11,
+  "reachable": 28,
+  "random_success": 0.045,
+  "reach90": 44,
+  "success": 1.0,
+  "steps": 17.0,
+  "states": 40
+ },
+ "walled2": {
+  "rows": 5,
+  "cols": 8,
+  "shortest": 15,
+  "reachable": 28,
+  "random_success": 0.135,
+  "reach90": 3,
+  "success": 1.0,
+  "steps": 15.0,
+  "states": 40
+ }
+}

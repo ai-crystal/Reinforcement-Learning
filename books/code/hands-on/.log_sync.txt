@@ -1,0 +1,6 @@
+dqn_sync50_s0 eval=241.3
+dqn_sync50_s1 eval=104.0
+dqn_sync200_s0 eval=200.9
+dqn_sync200_s1 eval=126.3
+dqn_sync1000_s0 eval=112.2
+dqn_sync1000_s1 eval=206.6

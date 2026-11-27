@@ -1,0 +1,41 @@
+{
+  "episodes": 150,
+  "bins": [
+    {
+      "angle_mid": -0.2,
+      "count": 6,
+      "right_share": 0.0
+    },
+    {
+      "angle_mid": -0.16,
+      "count": 254,
+      "right_share": 0.236
+    },
+    {
+      "angle_mid": -0.12,
+      "count": 449,
+      "right_share": 0.423
+    },
+    {
+      "angle_mid": -0.08,
+      "count": 1014,
+      "right_share": 0.388
+    },
+    {
+      "angle_mid": -0.04,
+      "count": 620,
+      "right_share": 0.51
+    },
+    {
+      "angle_mid": 0.0,
+      "count": 349,
+      "right_share": 0.759
+    },
+    {
+      "angle_mid": 0.04,
+      "count": 29,
+      "right_share": 1.0
+    }
+  ],
+  "overall_right_share": 0.46
+}

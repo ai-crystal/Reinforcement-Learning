@@ -1,0 +1,22 @@
+seed 0  upd  10  steps  20480  train10  -236.0  eval  -614.7
+seed 0  upd  20  steps  40960  train10   -55.7  eval   -99.5
+seed 0  upd  30  steps  61440  train10    -8.2  eval   -32.3
+seed 0  upd  40  steps  81920  train10    26.7  eval   -51.7
+seed 0  upd  50  steps 102400  train10    86.5  eval   107.8
+seed 0  upd  60  steps 122880  train10    89.2  eval   210.6
+seed 0  upd  70  steps 143360  train10    67.4  eval   -42.9
+seed 0  upd  80  steps 163840  train10    60.6  eval    68.7
+seed 0  upd  90  steps 184320  train10   197.6  eval   -78.0
+seed 0  upd 100  steps 204800  train10   217.6  eval   106.6
+lunar ppo seed=0  (249s) -> lunar_ppo_s0.json
+seed 1  upd  10  steps  20480  train10  -190.9  eval  -602.2
+seed 1  upd  20  steps  40960  train10   -55.9  eval   -93.1
+seed 1  upd  30  steps  61440  train10   -55.1  eval  -143.8
+seed 1  upd  40  steps  81920  train10    20.0  eval    12.4
+seed 1  upd  50  steps 102400  train10    35.2  eval   -52.2
+seed 1  upd  60  steps 122880  train10    93.8  eval    38.9
+seed 1  upd  70  steps 143360  train10   139.0  eval   120.4
+seed 1  upd  80  steps 163840  train10   103.9  eval   108.0
+seed 1  upd  90  steps 184320  train10    97.7  eval    55.1
+seed 1  upd 100  steps 204800  train10    83.9  eval    43.5
+lunar ppo seed=1  (218s) -> lunar_ppo_s1.json

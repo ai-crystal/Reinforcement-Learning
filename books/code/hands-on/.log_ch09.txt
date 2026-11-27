@@ -1,0 +1,28 @@
+lr=0.0003 seed=0  upd  20  kl 0.0050  clip 0.015  ent 0.639  eval 174.6
+lr=0.0003 seed=0  upd  40  kl 0.0062  clip 0.043  ent 0.619  eval 228.7
+lr=0.0003 seed=0  upd  60  kl 0.0062  clip 0.058  ent 0.586  eval 382.8
+lr=0.0003 seed=0  upd  80  kl 0.0066  clip 0.062  ent 0.572  eval 491.1
+lr=0.0003 seed=0  upd 100  kl 0.0025  clip 0.004  ent 0.562  eval 404.7
+lr=0.0003 seed=0  upd 120  kl 0.0052  clip 0.051  ent 0.562  eval 500.0
+lr=0.0003 seed=0  (72s) -> ppo9_lr0.0003_s0.json
+lr=0.0003 seed=1  upd  20  kl 0.0054  clip 0.025  ent 0.641  eval 198.0
+lr=0.0003 seed=1  upd  40  kl 0.0035  clip 0.014  ent 0.614  eval 477.0
+lr=0.0003 seed=1  upd  60  kl 0.0057  clip 0.050  ent 0.590  eval 481.6
+lr=0.0003 seed=1  upd  80  kl 0.0017  clip 0.003  ent 0.583  eval 369.9
+lr=0.0003 seed=1  upd 100  kl 0.0058  clip 0.054  ent 0.563  eval 500.0
+lr=0.0003 seed=1  upd 120  kl 0.0029  clip 0.011  ent 0.581  eval 500.0
+lr=0.0003 seed=1  (53s) -> ppo9_lr0.0003_s1.json
+lr=0.01 seed=0  upd  20  kl 0.0124  clip 0.165  ent 0.558  eval 500.0
+lr=0.01 seed=0  upd  40  kl 0.0237  clip 0.202  ent 0.361  eval 500.0
+lr=0.01 seed=0  upd  60  kl 0.0116  clip 0.120  ent 0.301  eval 500.0
+lr=0.01 seed=0  upd  80  kl 0.0116  clip 0.107  ent 0.257  eval 500.0
+lr=0.01 seed=0  upd 100  kl 0.0167  clip 0.110  ent 0.218  eval 500.0
+lr=0.01 seed=0  upd 120  kl 0.0162  clip 0.111  ent 0.195  eval 500.0
+lr=0.01 seed=0  (61s) -> ppo9_lr0.01_s0.json
+lr=0.01 seed=1  upd  20  kl 0.0154  clip 0.201  ent 0.540  eval 500.0
+lr=0.01 seed=1  upd  40  kl 0.0131  clip 0.132  ent 0.457  eval 379.2
+lr=0.01 seed=1  upd  60  kl 0.0112  clip 0.131  ent 0.410  eval 498.1
+lr=0.01 seed=1  upd  80  kl 0.0075  clip 0.087  ent 0.293  eval 500.0
+lr=0.01 seed=1  upd 100  kl 0.0060  clip 0.074  ent 0.259  eval 500.0
+lr=0.01 seed=1  upd 120  kl 0.0130  clip 0.127  ent 0.278  eval 500.0
+lr=0.01 seed=1  (59s) -> ppo9_lr0.01_s1.json

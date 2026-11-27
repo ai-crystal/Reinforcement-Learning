@@ -1,0 +1,6 @@
+full       seed=0  eval=500.0  clip=0.104  (250s) -> dqn7_full_s0.json
+full       seed=1  eval=176.7  clip=0.125  (120s) -> dqn7_full_s1.json
+no_double  seed=0  eval=500.0  clip=0.135  (144s) -> dqn7_no_double_s0.json
+no_double  seed=1  eval=144.8  clip=0.084  (114s) -> dqn7_no_double_s1.json
+no_clip    seed=0  eval=115.0  clip=0.096  (154s) -> dqn7_no_clip_s0.json
+no_clip    seed=1  eval=488.1  clip=0.114  (118s) -> dqn7_no_clip_s1.json

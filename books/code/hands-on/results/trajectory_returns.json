@@ -1,0 +1,191 @@
+{
+ "trajectory": {
+  "seed": 3,
+  "actions": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  "rows": [
+   {
+    "t": 0,
+    "a": null,
+    "obs": [
+     -0.0414,
+     -0.0263,
+     0.0301,
+     0.0082
+    ],
+    "r": 0.0
+   },
+   {
+    "t": 1,
+    "a": 1,
+    "obs": [
+     -0.042,
+     0.1684,
+     0.0303,
+     -0.2748
+    ],
+    "r": 1.0
+   },
+   {
+    "t": 2,
+    "a": 0,
+    "obs": [
+     -0.0386,
+     -0.0272,
+     0.0248,
+     0.0273
+    ],
+    "r": 1.0
+   },
+   {
+    "t": 3,
+    "a": 0,
+    "obs": [
+     -0.0391,
+     -0.2227,
+     0.0253,
+     0.3277
+    ],
+    "r": 1.0
+   },
+   {
+    "t": 4,
+    "a": 0,
+    "obs": [
+     -0.0436,
+     -0.4181,
+     0.0319,
+     0.6282
+    ],
+    "r": 1.0
+   },
+   {
+    "t": 5,
+    "a": 0,
+    "obs": [
+     -0.052,
+     -0.6137,
+     0.0445,
+     0.9308
+    ],
+    "r": 1.0
+   },
+   {
+    "t": 6,
+    "a": 1,
+    "obs": [
+     -0.0642,
+     -0.4192,
+     0.0631,
+     0.6524
+    ],
+    "r": 1.0
+   },
+   {
+    "t": 7,
+    "a": 1,
+    "obs": [
+     -0.0726,
+     -0.225,
+     0.0761,
+     0.3802
+    ],
+    "r": 1.0
+   },
+   {
+    "t": 8,
+    "a": 1,
+    "obs": [
+     -0.0771,
+     -0.031,
+     0.0837,
+     0.1125
+    ],
+    "r": 1.0
+   }
+  ],
+  "rewards": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "returns_099": [
+   7.7255,
+   6.7935,
+   5.852,
+   4.901,
+   3.9404,
+   2.9701,
+   1.99,
+   1.0
+  ],
+  "returns_095": [
+   6.7316,
+   6.0333,
+   5.2982,
+   4.5244,
+   3.7099,
+   2.8525,
+   1.95,
+   1.0
+  ],
+  "return_099_total": 7.7255,
+  "return_095_total": 6.7316,
+  "gamma8_099": 0.922745
+ },
+ "truncation_runs": {
+  "bootstrap_cap13": {
+   "bootstrap_at_trunc": true,
+   "train_cap": 13,
+   "truncated_episodes_during_training": 363,
+   "success_200": 1.0,
+   "steps_200": 11.0,
+   "success_13": 1.0,
+   "steps_13": 11.0,
+   "V_start": 0.5185
+  },
+  "bootstrap_cap200": {
+   "bootstrap_at_trunc": true,
+   "train_cap": 200,
+   "truncated_episodes_during_training": 3,
+   "success_200": 1.0,
+   "steps_200": 11.0,
+   "success_13": 1.0,
+   "steps_13": 11.0,
+   "V_start": 0.5185
+  },
+  "treat_trunc_as_terminal_cap13": {
+   "bootstrap_at_trunc": false,
+   "train_cap": 13,
+   "truncated_episodes_during_training": 426,
+   "success_200": 1.0,
+   "steps_200": 11.0,
+   "success_13": 1.0,
+   "steps_13": 11.0,
+   "V_start": 0.5047
+  },
+  "treat_trunc_as_terminal_cap200": {
+   "bootstrap_at_trunc": false,
+   "train_cap": 200,
+   "truncated_episodes_during_training": 3,
+   "success_200": 1.0,
+   "steps_200": 11.0,
+   "success_13": 1.0,
+   "steps_13": 11.0,
+   "V_start": 0.5185
+  }
+ }
+}
